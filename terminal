@@ -1,0 +1,64 @@
+pooh@pooh-VirtualBox:~$ cd repos
+pooh@pooh-VirtualBox:~/repos$ cd odin-recipes
+pooh@pooh-VirtualBox:~/repos/odin-recipes$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	new file:   images/pilau.jpg
+	new file:   images/pilau1.jpg
+	new file:   images/pilau2.jpg
+	new file:   images/pilau3.jpg
+	new file:   recipes/pilau.html
+
+pooh@pooh-VirtualBox:~/repos/odin-recipes$ git commit "Add images/pilau.jpg images/pilau.jpg"
+error: pathspec 'Add images/pilau.jpg images/pilau.jpg' did not match any file(s) known to git
+pooh@pooh-VirtualBox:~/repos/odin-recipes$ git commit "Add images/pilau.jpg"
+error: pathspec 'Add images/pilau.jpg' did not match any file(s) known to git
+pooh@pooh-VirtualBox:~/repos/odin-recipes$ git commit -m "Add images/pilau.jpg"
+[main dd90e69] Add images/pilau.jpg
+ 5 files changed, 19 insertions(+)
+ create mode 100644 images/pilau.jpg
+ create mode 100644 images/pilau1.jpg
+ create mode 100644 images/pilau2.jpg
+ create mode 100644 images/pilau3.jpg
+ create mode 100644 recipes/pilau.html
+pooh@pooh-VirtualBox:~/repos/odin-recipes$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 2 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+pooh@pooh-VirtualBox:~/repos/odin-recipes$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 2 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+pooh@pooh-VirtualBox:~/repos/odin-recipes$ git log
+commit dd90e69a54f953e0b14d2734d6891f0febeac75c (HEAD -> main)
+Author: Poh-poh <mumbimak98@gmail.com>
+Date:   Tue Feb 22 06:36:41 2022 +0300
+
+    Add images/pilau.jpg
+
+commit b0dad21d18a5794abe395d8e3c64a00dee3740a3
+Author: Poh-poh <mumbimak98@gmail.com>
+Date:   Tue Feb 22 06:22:50 2022 +0300
+
+    Add index.html
+
+commit de22e83f2a6e8efbfe99c0b199074cb18696d6f0 (origin/main, origin/HEAD)
+Author: Poh-poh <77292638+Poh-poh@users.noreply.github.com>
+Date:   Tue Feb 22 05:15:37 2022 +0300
+
+    Initial commit
+pooh@pooh-VirtualBox:~/repos/odin-recipes$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 2 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+pooh@pooh-VirtualBox:~/repos/odin-recipes$ 
